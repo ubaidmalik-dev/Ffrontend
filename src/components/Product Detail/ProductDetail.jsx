@@ -15,7 +15,7 @@ const ProductDetail = () => {
   useEffect(() => {
     const fetchProductDetails = async () => {
       try {
-        const response = await fetch(`http://localhost:3000/products/${id}`);
+        const response = await fetch(`https://mmtrjy-3000.csb.app/products/${id}`);
         if (!response.ok) {
           throw new Error("Failed to fetch product details");
         }
@@ -103,7 +103,7 @@ const ProductDetail = () => {
           {/* Left Side - Product Image */}
           <div className="flex-1 relative">
             <img
-              src={`http://localhost:3000${product.picture}`}
+              src={`https://mmtrjy-3000.csb.app${product.picture}`}
               alt={product.name}
               className="w-full h-auto object-cover rounded-md"
             />
