@@ -94,7 +94,7 @@ const Admin_All_Products = () => {
 
                   {/* Product Image */}
                   <img
-                    src={`http://localhost:3000${product.picture}`}
+                    src={`https://mmtrjy-3000.csb.app${product.picture}`}
                     alt={product.name}
                     className="h-[150px] sm:h-[180px] md:h-[220px] w-[150px] object-contain rounded-md"
                   />
