@@ -15,30 +15,30 @@ const All_Products = () => {
     const fetchProducts = async () => {
       setLoading(true);
       setError(null);
-      let url = "http://localhost:3000/user/getAllProducts";
+      let url = "https://mmtrjy-3000.csb.app/user/getAllProducts";
 
       if (sortFilter) {
         switch (sortFilter) {
           case "newest":
-            url = "http://localhost:3000/products/newest";
+            url = "https://mmtrjy-3000.csb.app/products/newest";
             break;
           case "oldest":
-            url = "http://localhost:3000/products/oldest";
+            url = "https://mmtrjy-3000.csb.app/products/oldest";
             break;
           case "price-high":
-            url = "http://localhost:3000/products/price-high";
+            url = "https://mmtrjy-3000.csb.app/products/price-high";
             break;
           case "price-low":
-            url = "http://localhost:3000/products/price-low";
+            url = "https://mmtrjy-3000.csb.app/products/price-low";
             break;
           case "all":
-            url = "http://localhost:3000/user/getAllProducts";
+            url = "https://mmtrjy-3000.csb.app/user/getAllProducts";
             break;
         }
       }
 
       if (categoryFilter) {
-        url = `http://localhost:3000/user/getAllProducts?category=${encodeURIComponent(categoryFilter)}`;
+        url = `https://mmtrjy-3000.csb.app/user/getAllProducts?category=${encodeURIComponent(categoryFilter)}`;
       }
 
       try {
