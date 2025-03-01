@@ -17,7 +17,7 @@ const Admin_All_Products = () => {
     try {
       setLoading(true);
       setError(null);
-      const response = await fetch("http://localhost:3000/user/getAllProducts");
+      const response = await fetch("https://mmtrjy-3000.csb.app/user/getAllProducts");
       if (!response.ok) throw new Error("Failed to fetch products");
       const data = await response.json();
       setProducts(data);
@@ -37,7 +37,7 @@ const Admin_All_Products = () => {
 
     if (window.confirm("Are you sure you want to delete this product?")) {
       try {
-        const response = await fetch(`http://localhost:3000/user/admin/products/${id}`, {
+        const response = await fetch(`https://mmtrjy-3000.csb.app/user/admin/products/${id}`, {
           method: "DELETE",
         });
 
