@@ -16,7 +16,7 @@ const About_Page = () => {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const response = await fetch("http://localhost:3000/api/orders");
+        const response = await fetch("https://mmtrjy-3000.csb.app/api/orders");
         if (!response.ok) {
           throw new Error("Failed to fetch orders");
         }
@@ -53,7 +53,7 @@ const About_Page = () => {
   const handleComplete = async (orderId) => {
     try {
       const response = await fetch(
-        `http://localhost:3000/api/orders/${orderId}/delete`,
+        `https://mmtrjy-3000.csb.app/api/orders/${orderId}/delete`,
         {
           method: "POST", // using POST as requested
           headers: {
@@ -142,7 +142,7 @@ const About_Page = () => {
                         {prod.productId && prod.productId.name ? (
                           <>
                             <img
-                              src={`http://localhost:3000${prod.productId.picture}`}
+                              src={`https://mmtrjy-3000.csb.app${prod.productId.picture}`}
                               alt={prod.productId.name}
                               className="w-16 h-16 object-cover rounded mr-2"
                             />
