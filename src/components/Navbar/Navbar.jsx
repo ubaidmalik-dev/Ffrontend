@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom"; // Import useLocation
-import DarkLogo from "../../assets/Logo.png";
+import DarkLogo from "../../assets/logo.png";
 import LightLogo from "../../assets/Logo.png";
 import { FaCartShopping } from "react-icons/fa6";
 import { IoClose, IoMenu } from "react-icons/io5";
